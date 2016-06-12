@@ -14,7 +14,7 @@ def get_participants(root, participants):
 
 if __name__ == '__main__':
     dir = os.path.expanduser("~")
-    data_source = os.path.join(dir, 'thesis_ws/Watch_Testing/results/')
+    data_source = os.path.join(dir, 'thesis_ws/Data/Watch_Testing/results/')
 
     participants_paths = []
     participants_paths = get_participants(data_source, participants_paths)

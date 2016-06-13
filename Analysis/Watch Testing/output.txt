@@ -1,29 +1,61 @@
-'AVERAGES', 'watch_man', 'watch_sa', 'xbox_man', 'xbox_sa'
-'dist_tot', 59.682, 53.54, 62.432, 53.294
-'time_tot', 5583.88, 4276.8, 6619.16, 4486.12
-'collisions', 7.6, 2.08, 9.12, 1.04
-'timeInAuto', 14.68, 2760.4, 10.08, 3048.56
-'timeInAuto_s1', 2.16, 1050.24, 10.08, 1249.44
-'timeInAuto_s2', 2.8, 745.72, 0.0, 784.84
-'timeInAuto_s3', 9.72, 964.44, 0.0, 1014.28
-'stage1Time', 2058.52, 1797.08, 2920.0, 1853.12
-'stage2Time', 1859.84, 1125.8, 1885.92, 1265.64
-'stage3Time', 1665.52, 1353.92, 1813.24, 1367.36
-'stage1Collisions', 2.68, 1.08, 3.68, 0.6
-'stage2Collisions', 3.04, 0.28, 3.28, 0.16
-'stage3Collisions', 1.88, 0.72, 2.16, 0.28
+AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 59.682, 53.54, 62.432, 53.294
+time_tot, 5583.88, 4276.8, 6619.16, 4486.12
+collisions, 7.6, 2.08, 9.12, 1.04
+timeInAuto, 14.68, 2760.4, 10.08, 3048.56
+timeInAuto_s1, 2.16, 1050.24, 10.08, 1249.44
+timeInAuto_s2, 2.8, 745.72, 0.0, 784.84
+timeInAuto_s3, 9.72, 964.44, 0.0, 1014.28
+stage1Time, 2058.52, 1797.08, 2920.0, 1853.12
+stage2Time, 1859.84, 1125.8, 1885.92, 1265.64
+stage3Time, 1665.52, 1353.92, 1813.24, 1367.36
+stage1Collisions, 2.68, 1.08, 3.68, 0.6
+stage2Collisions, 3.04, 0.28, 3.28, 0.16
+stage3Collisions, 1.88, 0.72, 2.16, 0.28
 
-'STD_DEVS', 'watch_man', 'watch_sa', 'xbox_man', 'xbox_sa'
-'dist_tot', 5.857, 2.67, 7.435, 1.908
-'time_tot', 2008.685, 548.208, 3452.859, 670.19
-'collisions', 3.085, 2.348, 5.046, 1.076
-'timeInAuto', 49.011, 592.008, 49.382, 581.4
-'timeInAuto_s1', 7.412, 277.435, 49.382, 282.785
-'timeInAuto_s2', 13.717, 172.146, 0.0, 90.33
-'timeInAuto_s3', 47.618, 186.176, 0.0, 251.481
-'stage1Time', 761.283, 280.478, 1444.094, 319.016
-'stage2Time', 871.173, 113.271, 1034.958, 249.212
-'stage3Time', 514.52, 233.914, 1260.002, 215.256
-'stage1Collisions', 1.737, 1.163, 2.293, 0.49
-'stage2Collisions', 1.907, 1.372, 1.844, 0.463
-'stage3Collisions', 1.728, 1.709, 3.158, 0.96
+
+STD_DEVS, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 5.857, 2.67, 7.435, 1.908
+time_tot, 2008.685, 548.208, 3452.859, 670.19
+collisions, 3.085, 2.348, 5.046, 1.076
+timeInAuto, 49.011, 592.008, 49.382, 581.4
+timeInAuto_s1, 7.412, 277.435, 49.382, 282.785
+timeInAuto_s2, 13.717, 172.146, 0.0, 90.33
+timeInAuto_s3, 47.618, 186.176, 0.0, 251.481
+stage1Time, 761.283, 280.478, 1444.094, 319.016
+stage2Time, 871.173, 113.271, 1034.958, 249.212
+stage3Time, 514.52, 233.914, 1260.002, 215.256
+stage1Collisions, 1.737, 1.163, 2.293, 0.49
+stage2Collisions, 1.907, 1.372, 1.844, 0.463
+stage3Collisions, 1.728, 1.709, 3.158, 0.96
+
+
+STATS watch_man v xbox_man, t-val, p-val, corr, 
+dist_tot, -1.423, 0.161, 0.765
+time_tot, -1.27, 0.21, 0.659
+collisions, -1.259, 0.214, 0.563
+timeInAuto, 0.324, 0.747, -0.061
+timeInAuto_s1, -0.777, 0.441, -0.059
+timeInAuto_s2, 1.0, 0.322, nan
+timeInAuto_s3, 1.0, 0.322, nan
+stage1Time, -2.585, 0.013, 0.649
+stage2Time, -0.094, 0.925, 0.75
+stage3Time, -0.532, 0.597, 0.329
+stage1Collisions, -1.703, 0.095, -0.046
+stage2Collisions, -0.443, 0.66, 0.065
+stage3Collisions, -0.381, 0.705, 0.37
+
+STATS watch_sa v xbox_sa, t-val, p-val, 
+dist_tot, 0.368, 0.715, 0.503
+time_tot, -1.184, 0.242, 0.627
+collisions, 1.972, 0.054, -0.017
+timeInAuto, -1.701, 0.095, 0.907
+timeInAuto_s1, -2.463, 0.017, 0.895
+timeInAuto_s2, -0.986, 0.329, 0.723
+timeInAuto_s3, -0.78, 0.439, 0.729
+stage1Time, -0.646, 0.521, 0.535
+stage2Time, -2.503, 0.016, 0.702
+stage3Time, -0.207, 0.837, 0.271
+stage1Collisions, 1.863, 0.069, -0.084
+stage2Collisions, 0.406, 0.687, -0.071
+stage3Collisions, 1.1, 0.277, -0.123

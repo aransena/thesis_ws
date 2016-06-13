@@ -12,16 +12,30 @@ tags=["dist_tot","time_tot","collisions","timeInAuto","timeInAuto_s1",
 
 if __name__ == '__main__':
     participants = pickle.load(open("participants.p", "rb"))
+    prev_participants = pickle.load(open("prev_participants.p", "rb"))
+
     watch_mans = []
     watch_sas = []
     xbox_mans = []
     xbox_sas = []
+    prev_xbox_mans = []
+    prev_xbox_sas = []
+    app_mans = []
+    app_sas = []
+
     for f in participants:
         watch_mans.append(f.get_watch_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
         watch_sas.append(f.get_watch_sa_data())
         xbox_mans.append(f.get_xbox_man_data())
         xbox_sas.append(f.get_xbox_sa_data())
-    data = [watch_mans,watch_sas,xbox_mans,xbox_sas]
+
+    for f in prev_participants:
+        app_mans.append(f.get_app_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
+        app_sas.append(f.get_app_sa_data())
+        prev_xbox_mans.append(f.get_xbox_man_data())
+        prev_xbox_sas.append(f.get_xbox_sa_data())
+
+    data = [watch_mans,watch_sas,xbox_mans,xbox_sas, prev_xbox_mans,prev_xbox_sas, app_mans, app_sas]
 
     f = open('output.txt', 'w')
     avgs = []
@@ -37,7 +51,7 @@ if __name__ == '__main__':
 
 
 
-    header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa"]
+    header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa", "prev_xbox_mans", "prev_xbox_sas", "app_mans", "app_sas"]
     map(lambda x: f.write(x + ", "), header)
     f.write("\n")
 
@@ -49,7 +63,7 @@ if __name__ == '__main__':
         f.write("\n")
     f.write("\n\n")
 
-    header = ["STD_DEVS","watch_man","watch_sa","xbox_man","xbox_sa"]
+    header = ["STD_DEVS","watch_man","watch_sa","xbox_man","xbox_sa", "prev_xbox_mans", "prev_xbox_sas", "app_mans", "app_sas"]
     map(lambda x: f.write(x + ", "), header)
     f.write("\n")
     for i in range(0,len(stds[0])):

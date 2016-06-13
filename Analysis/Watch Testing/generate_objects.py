@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pickle
 import os
 import participants as ppants
+import prev_participants as prev_ppants
 
 
 def get_participants(root, participants):
@@ -17,8 +18,11 @@ if __name__ == '__main__':
     data_source = os.path.join(dir, 'thesis_ws/Data/Watch_Testing/results/')
 
     participants_paths = []
+
     participants_paths = get_participants(data_source, participants_paths)
+
     participants = []
+
     for p in participants_paths:
         participants.append(ppants.participant(p))
 

@@ -11,9 +11,11 @@ tags=["dist_tot","time_tot","collisions","timeInAuto","timeInAuto_s1",
           "stage1Collisions", "stage2Collisions", "stage3Collisions"]
 
 if __name__ == '__main__':
+
     participants = pickle.load(open("participants.p", "rb"))
     prev_participants = pickle.load(open("prev_participants.p", "rb"))
 
+   # print prev_participants[0].get_app_man_data()
     watch_mans = []
     watch_sas = []
     xbox_mans = []
@@ -30,9 +32,17 @@ if __name__ == '__main__':
         xbox_sas.append(f.get_xbox_sa_data())
 
     for f in prev_participants:
-        app_mans.append(f.get_app_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
+        print f.get_path(), f.get_files()
+        try:
+            app_mans.append(f.get_app_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
+        except:
+            print f.get_app_files()
+
         app_sas.append(f.get_app_sa_data())
-        prev_xbox_mans.append(f.get_xbox_man_data())
+        try:
+            prev_xbox_mans.append(f.get_xbox_man_data())
+        except:
+            print f.get_xbox_files()
         prev_xbox_sas.append(f.get_xbox_sa_data())
 
     data = [watch_mans,watch_sas,xbox_mans,xbox_sas, prev_xbox_mans,prev_xbox_sas, app_mans, app_sas]

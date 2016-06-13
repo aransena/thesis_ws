@@ -23,7 +23,7 @@ if __name__ == '__main__':
     prev_participants = []
 
     for p in prev_participants_paths:
-        prev_participants.append(prev_ppants.participant(p))
+        prev_participants.append(prev_ppants.prev_participant(p))
 
     pickle.dump(prev_participants,open("prev_participants.p","wb"))
 

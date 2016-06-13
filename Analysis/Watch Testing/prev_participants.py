@@ -59,7 +59,7 @@ def get_data(path):
     return [dist_tot,time_tot,collisions,timeInAuto_s1+timeInAuto_s2+timeInAuto_s3,timeInAuto_s1,timeInAuto_s2,timeInAuto_s3,stage1Time, stage2Time,stage3Time, stage1Collisions, stage2Collisions, stage3Collisions]
 
 
-class participant:
+class prev_participant:
     def __init__(self,path):
         self.path = path
         files=[]

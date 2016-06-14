@@ -34,7 +34,7 @@ if __name__ == '__main__':
         std = lambda items: np.std(items)
         avgs.append(map(avg, transposed))
         stds.append(map(std, transposed))
-
+        print transposed
 
 
     header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa"]
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         output = str(output)
         f.write(output)#[1:-1])
         f.write("\n")
-    f.write("\n\n")
+
 
     header = ["STD_DEVS","watch_man","watch_sa","xbox_man","xbox_sa"]
     map(lambda x: f.write(x + ", "), header)

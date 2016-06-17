@@ -1,0 +1,282 @@
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-18-02.bag
+version:     2.0
+duration:    30.7s
+start:       Jun 16 2016 22:18:02.55 (1466111882.55)
+end:         Jun 16 2016 22:18:33.27 (1466111913.27)
+size:        90.6 KB
+messages:    1371
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                     6 msgs @  0.3 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   1365 msgs @ 49.3 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-18-02.bag
+Time Taken (s): 30.7225294113
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  2.28 m
+^C^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-20-56.bag
+version:     2.0
+duration:    1:11s (71s)
+start:       Jun 16 2016 22:20:56.28 (1466112056.28)
+end:         Jun 16 2016 22:22:07.55 (1466112127.55)
+size:        140.8 KB
+messages:    2242
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                     6 msgs @  0.3 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   2236 msgs @ 48.1 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-20-56.bag
+Time Taken (s): 71.2613523006
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  2.29 m
+^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-23-31.bag
+version:     2.0
+duration:    57.4s
+start:       Jun 16 2016 22:23:31.77 (1466112211.77)
+end:         Jun 16 2016 22:24:29.21 (1466112269.21)
+size:        110.5 KB
+messages:    1717
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                     6 msgs @  0.2 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   1711 msgs @ 46.6 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-23-31.bag
+Time Taken (s): 57.4319729805
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  2.29 m
+^C^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ 
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-32-07.bag
+version:     2.0
+duration:    24.6s
+start:       Jun 16 2016 22:32:07.96 (1466112727.96)
+end:         Jun 16 2016 22:32:32.59 (1466112752.59)
+size:        56.9 KB
+messages:    786
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                    6 msgs @  0.3 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   780 msgs @ 21.4 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-32-07.bag
+Time Taken (s): 24.6366939545
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  2.79 m
+^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-33-15.bag
+version:     2.0
+duration:    26.7s
+start:       Jun 16 2016 22:33:15.92 (1466112795.92)
+end:         Jun 16 2016 22:33:42.58 (1466112822.58)
+size:        55.1 KB
+messages:    749
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                    7 msgs @  0.4 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   742 msgs @ 20.1 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-33-15.bag
+Time Taken (s): 26.6621875763
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  2.86 m
+^Z
+[1]+  Stopped                 python rosbag_analysis.py
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-34-50.bag
+version:     2.0
+duration:    27.1s
+start:       Jun 16 2016 22:34:50.07 (1466112890.07)
+end:         Jun 16 2016 22:35:17.12 (1466112917.12)
+size:        46.0 KB
+messages:    585
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                    8 msgs @  0.4 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   577 msgs @ 20.0 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-34-50.bag
+Time Taken (s): 27.0560586452
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  3.33 m
+^Z
+[2]+  Stopped                 python rosbag_analysis.py
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-36-08.bag
+version:     2.0
+duration:    13.2s
+start:       Jun 16 2016 22:36:09.04 (1466112969.04)
+end:         Jun 16 2016 22:36:22.25 (1466112982.25)
+size:        25.0 KB
+messages:    252
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                    3 msgs @  0.2 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   249 msgs @ 20.0 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-36-08.bag
+Time Taken (s): 13.2103950977
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  0.83 m
+^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-38-50.bag
+version:     2.0
+duration:    21.7s
+start:       Jun 16 2016 22:38:50.48 (1466113130.48)
+end:         Jun 16 2016 22:39:12.15 (1466113152.15)
+size:        69.1 KB
+messages:    993
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                    7 msgs @  0.4 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   986 msgs @ 48.3 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-38-50.bag
+Time Taken (s): 21.6702156067
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  3.07 m
+^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ python rosbag_analysis.py 
+DIR:  /home/aransena
+
+---------------
+
+map scale:  20.0
+offsets:  -100.0   -100.0
+
+---------------
+
+path:        /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-39-56.bag
+version:     2.0
+duration:    40.0s
+start:       Jun 16 2016 22:39:56.24 (1466113196.24)
+end:         Jun 16 2016 22:40:36.22 (1466113236.22)
+size:        103.3 KB
+messages:    1579
+compression: none [1/1 chunks]
+types:       geometry_msgs/PoseWithCovarianceStamped [953b798c0f514ff060a53a3498ce6246]
+             std_msgs/Int8                           [27ffa0c9c4b8fb8492252bcad9e5c57b]
+topics:      /amcl_pose                     8 msgs @  0.3 Hz : geometry_msgs/PoseWithCovarianceStamped
+             /nri_system/control_level   1571 msgs @ 48.8 Hz : std_msgs/Int8                           (2 connections)
+
+---------------
+
+File: /home/aransena/thesis_ws/Data/robot_testing/2016-06-16-22-39-56.bag
+Time Taken (s): 39.9771866798
+Collisions: 0
+% Time in Semi Autonomous: 0.0
+Distance travelled:  3.36 m
+^\Quit (core dumped)
+aransena@aran-xps:~/thesis_ws/Analysis/Real Robot$ 
+

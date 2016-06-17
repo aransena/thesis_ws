@@ -1,0 +1,64 @@
+Manual Averages, watch_man, xbox_man, prev_xbox_mans, app_mans, 
+dist_tot, 59.682, 62.432, 68.168, 61.099
+time_tot, 5583.88, 6619.16, 7271.36, 8056.1
+collisions, 7.6, 9.12, 11.7, 9.9
+timeInAuto, 14.68, 10.08, 33.64, 0.0
+timeInAuto_s1, 2.16, 10.08, 9.92, 0.0
+timeInAuto_s2, 2.8, 0.0, 16.32, 0.0
+timeInAuto_s3, 9.72, 0.0, 7.4, 0.0
+stage1Time, 2058.52, 2920.0, 3047.08, 3063.88
+stage2Time, 1859.84, 1885.92, 2117.5, 2416.56
+stage3Time, 1665.52, 1813.24, 2106.78, 2575.66
+stage1Collisions, 2.68, 3.68, 4.4, 3.64
+stage2Collisions, 3.04, 3.28, 4.62, 3.42
+stage3Collisions, 1.88, 2.16, 2.68, 2.84
+
+
+Semi Auto Averages, watch_sa, xbox_sa, prev_xbox_sas, app_sas, 
+dist_tot, 53.54, 53.294, 52.629, 52.497
+time_tot, 4276.8, 4486.12, 4068.24, 4396.78
+collisions, 2.08, 1.04, 0.7, 0.76
+timeInAuto, 2760.4, 3048.56, 2687.8, 2844.58
+timeInAuto_s1, 1050.24, 1249.44, 1065.4, 1108.32
+timeInAuto_s2, 745.72, 784.84, 737.66, 782.12
+timeInAuto_s3, 964.44, 1014.28, 884.74, 954.14
+stage1Time, 1797.08, 1853.12, 1659.5, 1796.16
+stage2Time, 1125.8, 1265.64, 1132.08, 1233.3
+stage3Time, 1353.92, 1367.36, 1276.66, 1367.32
+stage1Collisions, 1.08, 0.6, 0.44, 0.6
+stage2Collisions, 0.28, 0.16, 0.1, 0.06
+stage3Collisions, 0.72, 0.28, 0.16, 0.1
+
+
+Manual STD, watch_man, xbox_man, prev_xbox_mans, app_mans, 
+dist_tot, 5.857, 7.435, 16.709, 6.377
+time_tot, 2008.685, 3452.859, 4203.9, 3789.703
+collisions, 3.085, 5.046, 7.968, 5.382
+timeInAuto, 49.011, 49.382, 235.48, 0.0
+timeInAuto_s1, 7.412, 49.382, 69.44, 0.0
+timeInAuto_s2, 13.717, 0.0, 114.24, 0.0
+timeInAuto_s3, 47.618, 0.0, 51.8, 0.0
+stage1Time, 761.283, 1444.094, 1844.878, 1452.204
+stage2Time, 871.173, 1034.958, 1374.439, 1223.813
+stage3Time, 514.52, 1260.002, 1446.917, 1536.369
+stage1Collisions, 1.737, 2.293, 3.298, 2.59
+stage2Collisions, 1.907, 1.844, 3.789, 2.384
+stage3Collisions, 1.728, 3.158, 3.829, 2.921
+
+
+Semi Auto STD, watch_sa, xbox_sa, prev_xbox_sas, app_sas, 
+dist_tot, 2.67, 1.908, 1.665, 1.032
+time_tot, 548.208, 670.19, 475.947, 453.944
+collisions, 2.348, 1.076, 1.082, 1.011
+timeInAuto, 592.008, 581.4, 643.254, 627.273
+timeInAuto_s1, 277.435, 282.785, 313.676, 269.108
+timeInAuto_s2, 172.146, 90.33, 137.365, 167.25
+timeInAuto_s3, 186.176, 251.481, 263.265, 273.968
+stage1Time, 280.478, 319.016, 365.503, 279.275
+stage2Time, 113.271, 249.212, 138.982, 155.404
+stage3Time, 233.914, 215.256, 111.205, 164.457
+stage1Collisions, 1.163, 0.49, 0.535, 0.566
+stage2Collisions, 1.372, 0.463, 0.412, 0.42
+stage3Collisions, 1.709, 0.96, 0.731, 0.412
+
+

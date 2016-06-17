@@ -10,49 +10,12 @@ tags=["dist_tot","time_tot","collisions","timeInAuto","timeInAuto_s1",
           "timeInAuto_s2","timeInAuto_s3","stage1Time", "stage2Time", "stage3Time",
           "stage1Collisions", "stage2Collisions", "stage3Collisions"]
 
-if __name__ == '__main__':
 
-    participants = pickle.load(open("participants.p", "rb"))
-    prev_participants = pickle.load(open("prev_participants.p", "rb"))
-
-   # print prev_participants[0].get_app_man_data()
-    watch_mans = []
-    watch_sas = []
-    xbox_mans = []
-    xbox_sas = []
-    prev_xbox_mans = []
-    prev_xbox_sas = []
-    app_mans = []
-    app_sas = []
-
-    for f in participants:
-        watch_mans.append(f.get_watch_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
-        watch_sas.append(f.get_watch_sa_data())
-        xbox_mans.append(f.get_xbox_man_data())
-        xbox_sas.append(f.get_xbox_sa_data())
-
-    for f in prev_participants:
-        print f.get_path(), f.get_files()
-        try:
-            app_mans.append(f.get_app_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
-        except:
-            print f.get_app_files()
-
-        app_sas.append(f.get_app_sa_data())
-        try:
-            prev_xbox_mans.append(f.get_xbox_man_data())
-        except:
-            print f.get_xbox_files()
-        prev_xbox_sas.append(f.get_xbox_sa_data())
-
-    data = [watch_mans,watch_sas,xbox_mans,xbox_sas, prev_xbox_mans,prev_xbox_sas, app_mans, app_sas]
-    man_data = [watch_mans,xbox_mans,prev_xbox_mans,app_mans]
-    sa_data = [watch_sas,xbox_sas, prev_xbox_sas,app_sas]
-
-    f = open('output_wprev.txt', 'w')
+def analysis(f,data):
     avgs = []
     stds = []
     transposed_sets = []
+
     for set in data:
         transposed = zip(*set)
         transposed_sets.append(transposed)
@@ -60,9 +23,10 @@ if __name__ == '__main__':
         std = lambda items: np.std(items)
         avgs.append(map(avg, transposed))
         stds.append(map(std, transposed))
+        print transposed
 
 
-    header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa", "prev_xbox_mans", "prev_xbox_sas", "app_mans", "app_sas"]
+    header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa"]
     map(lambda x: f.write(x + ", "), header)
     f.write("\n")
 
@@ -72,9 +36,9 @@ if __name__ == '__main__':
         output = str(output)
         f.write(output)#[1:-1])
         f.write("\n")
-    f.write("\n\n")
 
-    header = ["STD_DEVS","watch_man","watch_sa","xbox_man","xbox_sa", "prev_xbox_mans", "prev_xbox_sas", "app_mans", "app_sas"]
+
+    header = ["STD_DEVS","watch_man","watch_sa","xbox_man","xbox_sa"]
     map(lambda x: f.write(x + ", "), header)
     f.write("\n")
     for i in range(0,len(stds[0])):
@@ -109,76 +73,40 @@ if __name__ == '__main__':
 
     f.close()
 
-    man_avgs = []
-    man_stds = []
-    sa_avgs = []
-    sa_stds = []
 
-    for set in man_data:
-        transposed = zip(*set)
-        transposed_sets.append(transposed)
-        avg = lambda items: float(sum(items)) / len(items)
-        std = lambda items: np.std(items)
-        man_avgs.append(map(avg, transposed))
-        man_stds.append(map(std, transposed))
+if __name__ == '__main__':
+    f_participants = pickle.load(open("female_participants.p", "rb"))
+    m_participants = pickle.load(open("male_participants.p", "rb"))
 
-    for set in sa_data:
-        transposed = zip(*set)
-        transposed_sets.append(transposed)
-        avg = lambda items: float(sum(items)) / len(items)
-        std = lambda items: np.std(items)
-        sa_avgs.append(map(avg, transposed))
-        sa_stds.append(map(std, transposed))
+    f_watch_mans = []
+    f_watch_sas = []
+    f_xbox_mans = []
+    f_xbox_sas = []
+    for f in f_participants:
+        f_watch_mans.append(f.get_watch_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
+        f_watch_sas.append(f.get_watch_sa_data())
+        f_xbox_mans.append(f.get_xbox_man_data())
+        f_xbox_sas.append(f.get_xbox_sa_data())
+    f_data = [f_watch_mans,f_watch_sas,f_xbox_mans,f_xbox_sas]
 
-    g = open('output_wprev2.txt', 'w')
+    m_watch_mans = []
+    m_watch_sas = []
+    m_xbox_mans = []
+    m_xbox_sas = []
+    for f in m_participants:
+        m_watch_mans.append(f.get_watch_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
+        m_watch_sas.append(f.get_watch_sa_data())
+        m_xbox_mans.append(f.get_xbox_man_data())
+        m_xbox_sas.append(f.get_xbox_sa_data())
+    m_data = [m_watch_mans,m_watch_sas,m_xbox_mans,m_xbox_sas]
 
-    header = ["Manual Averages","watch_man","xbox_man","prev_xbox_mans", "app_mans"]
-    map(lambda x: g.write(x + ", "), header)
-    g.write("\n")
+    m_f = open('m_output.txt', 'w')
+    f_f = open('f_output.txt','w')
 
-    for i in range(0,len(man_avgs[0])):
-        data = map(lambda x: round(x,3),zip(*man_avgs)[i])
-        output = tags[i] + ", " + str(data)[1:-1]
-        output = str(output)
-        g.write(output)#[1:-1])
-        g.write("\n")
-    g.write("\n\n")
 
-    header = ["Semi Auto Averages","watch_sa","xbox_sa", "prev_xbox_sas", "app_sas"]
-    map(lambda x: g.write(x + ", "), header)
-    g.write("\n")
+    analysis(m_f,m_data)
+    analysis(f_f,f_data)
 
-    for i in range(0,len(sa_avgs[0])):
-        data = map(lambda x: round(x,3),zip(*sa_avgs)[i])
-        output = tags[i] + ", " + str(data)[1:-1]
-        output = str(output)
-        g.write(output)#[1:-1])
-        g.write("\n")
-    g.write("\n\n")
-
-    header = ["Manual STD","watch_man","xbox_man", "prev_xbox_mans", "app_mans"]
-    map(lambda x: g.write(x + ", "), header)
-    g.write("\n")
-    for i in range(0,len(man_stds[0])):
-        data = map(lambda x: round(x,3),zip(*man_stds)[i])
-        output = tags[i] + ", " + str(data)[1:-1]
-        output = str(output)
-        g.write(output)
-        g.write("\n")
-    g.write("\n\n")
-
-    header = ["Semi Auto STD","watch_sa","xbox_sa", "prev_xbox_sas", "app_sas"]
-    map(lambda x: g.write(x + ", "), header)
-    g.write("\n")
-    for i in range(0,len(sa_avgs[0])):
-        data = map(lambda x: round(x,3),zip(*sa_stds)[i])
-        output = tags[i] + ", " + str(data)[1:-1]
-        output = str(output)
-        g.write(output)
-        g.write("\n")
-    g.write("\n\n")
-
-    g.close()
 
     # transposed = zip(*watch_mans)
     # transposed_w_m = transposed

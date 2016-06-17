@@ -1,0 +1,59 @@
+AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 60.728, 52.834, 65.855, 52.572
+time_tot, 6294.8, 4395.3, 8697.2, 4735.4
+collisions, 9.5, 1.1, 10.1, 1.4
+timeInAuto, 0.0, 3078.4, 0.0, 3241.8
+timeInAuto_s1, 0.0, 1215.2, 0.0, 1331.0
+timeInAuto_s2, 0.0, 810.8, 0.0, 831.0
+timeInAuto_s3, 0.0, 1052.4, 0.0, 1079.8
+stage1Time, 2325.2, 1839.2, 3724.0, 1915.8
+stage2Time, 1964.9, 1190.0, 2440.8, 1349.9
+stage3Time, 2004.7, 1366.1, 2532.4, 1469.7
+stage1Collisions, 3.0, 0.9, 3.7, 1.0
+stage2Collisions, 3.9, 0.0, 4.5, 0.0
+stage3Collisions, 2.6, 0.2, 1.9, 0.4
+STD_DEVS, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 5.47, 2.385, 9.244, 1.737
+time_tot, 2088.504, 539.69, 4934.525, 796.082
+collisions, 2.693, 0.7, 4.277, 1.2
+timeInAuto, 0.0, 158.142, 0.0, 86.353
+timeInAuto_s1, 0.0, 113.709, 0.0, 84.03
+timeInAuto_s2, 0.0, 40.973, 0.0, 15.33
+timeInAuto_s3, 0.0, 56.735, 0.0, 26.903
+stage1Time, 935.466, 209.571, 1912.099, 382.187
+stage2Time, 633.208, 165.24, 1344.548, 300.232
+stage3Time, 592.934, 255.973, 1966.656, 252.678
+stage1Collisions, 1.095, 0.3, 2.238, 0.0
+stage2Collisions, 2.119, 0.0, 2.419, 0.0
+stage3Collisions, 2.245, 0.6, 1.044, 1.2
+
+
+STATS watch_man v xbox_man, t-val, p-val, corr, 
+dist_tot, -1.432, 0.169, 0.715
+time_tot, -1.345, 0.195, 0.637
+collisions, -0.356, 0.726, 0.76
+timeInAuto, nan, nan, nan
+timeInAuto_s1, nan, nan, nan
+timeInAuto_s2, nan, nan, nan
+timeInAuto_s3, nan, nan, nan
+stage1Time, -1.971, 0.064, 0.655
+stage2Time, -0.961, 0.349, 0.767
+stage3Time, -0.771, 0.451, 0.314
+stage1Collisions, -0.843, 0.41, 0.285
+stage2Collisions, -0.56, 0.583, 0.166
+stage3Collisions, 0.848, 0.407, 0.495
+
+STATS watch_sa v xbox_sa, t-val, p-val, 
+dist_tot, 0.267, 0.793, 0.574
+time_tot, -1.061, 0.303, 0.65
+collisions, -0.648, 0.525, -0.048
+timeInAuto, -2.721, 0.014, 0.549
+timeInAuto_s1, -2.457, 0.024, -0.077
+timeInAuto_s2, -1.385, 0.183, 0.137
+timeInAuto_s3, -1.309, 0.207, -0.008
+stage1Time, -0.527, 0.604, 0.559
+stage2Time, -1.4, 0.179, 0.526
+stage3Time, -0.864, 0.399, 0.154
+stage1Collisions, -1.0, 0.331, nan
+stage2Collisions, nan, nan, nan
+stage3Collisions, -0.447, 0.66, -0.111

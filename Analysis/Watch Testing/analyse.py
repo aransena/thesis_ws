@@ -20,6 +20,7 @@ if __name__ == '__main__':
     dir = os.path.expanduser("~")
     pickle_source = os.path.join(dir, 'thesis_ws/Analysis/Watch Testing/data/')
     pickles = get_pickles(pickle_source)
+    print pickles
 
     for pick in pickles:
         participants = pickle.load(open(pick, "rb"))

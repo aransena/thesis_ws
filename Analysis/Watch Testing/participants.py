@@ -238,3 +238,9 @@ class participant:
     def get_game_info(self):
         return [self.pre_ever_played,self.pre_how_often]
 
+    def get_spatial(self):
+        return self.pre_spatial
+
+    def get_tech_ability(self):
+        return self.pre_ability_technology
+

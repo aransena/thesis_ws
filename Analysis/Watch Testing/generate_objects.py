@@ -41,46 +41,5 @@ if __name__ == '__main__':
     for p in participants_paths:
         participants.append(ppants.participant(p,pre_data,post_data))
 
-    male_participants=[]
-    female_participants=[]
-    age_groups = [[],[],[],[]]
-    game_exp_groups = [[],[],[],[]]
-
-
-    for participant in participants:
-        #print participant.get_test_num()
-        if participant.get_gender() == 1:
-            male_participants.append(participant)
-        if participant.get_gender() == 2:
-            female_participants.append(participant)
-
-        age = participant.get_age()
-        try:
-            age_groups[age-1].append(participant)
-        except:
-            print "No age_groups! ", participant.get_test_num()
-
-        game_info = participant.get_game_info()
-        game_exp = game_info[0]
-        game_exp_groups[game_exp-1].append(participant)
-
-
-
 
     pickle.dump(participants,open("data/participants.p","wb"))
-    pickle.dump(male_participants,open("data/male_participants.p","wb"))
-    pickle.dump(female_participants,open("data/female_participants.p","wb"))
-
-    # sum = 0
-    for i,group in enumerate(age_groups):
-        filename = "data/age_group_" + str(i) +".p"
-        # sum = sum + len(group)
-        pickle.dump(group, open(filename,"wb"))
-    # print "SUM: ", sum
-
-    # sum = 0
-    for i,group in enumerate(game_exp_groups):
-        filename = "data/game_group_" + str(i) +".p"
-        # sum = sum + len(group)
-        pickle.dump(group, open(filename,"wb"))
-    # print "SUM: ", sum

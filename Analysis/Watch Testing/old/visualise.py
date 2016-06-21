@@ -10,7 +10,7 @@ tags=["dist_tot","time_tot","collisions","timeInAuto","timeInAuto_s1",
 data_indx = []
 data=[]
 if __name__ == '__main__':
-    raw_data = open("output_wprev2.txt",'r')
+    raw_data = open("analysed/age_group_0.txt",'r')
 
     for i, line in enumerate(raw_data):
         if "Manual Averages" in line:
@@ -59,7 +59,7 @@ if __name__ == '__main__':
             ax.set_xticklabels(headers[1:])
             plt.ylim(0,1.1*(max(avgs[i])+max(stds[i])))
             plt.xlim([min(ind) - 0.2, max(ind) + 0.5])
-            plt.savefig("images/"+str(headers[0]) + "_" + tags[i])
+            plt.savefig("old/"+str(headers[0]) + "_" + tags[i])
             plt.show()
 
     else:

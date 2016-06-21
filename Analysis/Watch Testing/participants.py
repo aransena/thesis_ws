@@ -97,6 +97,7 @@ class participant:
         self.sa_files = sa_files
         self.man_files = man_files
         print self.test_num
+        self.gender = 0
 
         # survey data
         for line in pre_data:
@@ -109,21 +110,21 @@ class participant:
                     self.pre_age_range = 2
                 elif data[2] == "35-44":
                     self.pre_age_range = 3
-                elif data[2] == "45-54":
+                elif data[2] == "45-54" or data[2] == "55-64" or data[2] == "65-74":
                     self.pre_age_range = 4
-                elif data[2] == "55-64":
-                    self.pre_age_range = 5
-                elif data[2] == "65-74":
-                    self.pre_age_range = 6
+                # elif data[2] == "55-64":
+                #     self.pre_age_range = 5
+                # elif data[2] == "65-74":
+                #     self.pre_age_range = 6
                 else:
                     self.pre_age_range = 0
 
                 if data[3] == "Male":
-                    self.pre_gender = 1
+                    self.gender = 1
                 elif data[3] == "Female":
-                    self.pre_gender = 2
+                    self.gender = 2
                 else:
-                    self.pre_gender = 0
+                    self.gender = 0
 
 
                 if data[4] == "Yes":
@@ -229,9 +230,11 @@ class participant:
         return self.xbox_man_data
 
     def get_gender(self):
-        return self.pre_gender
+        return self.gender
 
     def get_age(self):
         return self.pre_age_range
 
+    def get_game_info(self):
+        return [self.pre_ever_played,self.pre_how_often]
 

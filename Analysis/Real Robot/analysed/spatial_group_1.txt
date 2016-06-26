@@ -1,7 +1,9 @@
-AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, 
+AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, phone, tablet, 
 
 STD_DEVS, watch_man, watch_sa, xbox_man, xbox_sa, 
 
 STATS watch_man v xbox_man, t-val, p-val, corr, 
 
 STATS watch_sa v xbox_sa, t-val, p-val, 
+
+STATS watch_sa v xbox_sa, F-val, p-val, 

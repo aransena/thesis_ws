@@ -16,7 +16,7 @@ tags=["dist_tot","time_tot","collisions","timeInAuto"]
 # man_data_cols = [1,3]
 # sa_data_cols = [2,4]
 
-data_rows = [1,2,3,16,17,18]
+data_rows = [1,2,3,7,8,9]
 
 
 width = 0.35
@@ -27,16 +27,16 @@ colours = ['0.5','0.55','0.6','0.65','0.7','0.75','0.8','0.85']
 titles = ["Average Distance Travelled", "Average Time Taken","Average Collisions Incurred"]
 hatches = [".",'-','o']
 
-groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt','_group_4.txt']
-#groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt']
-#group_start = "game" # "game" "age" "spatial"
-#data_files = map(lambda x: group_start+x, groups_end)
-data_files = ['participants.txt'] # all_files
-group_start = "all"
+#groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt','_group_4.txt']
+groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt']
+group_start = "age" # "game" "age" "spatial"
+data_files = map(lambda x: group_start+x, groups_end)
+#data_files = ['participants.txt'] # all_files
+#group_start = "all"
 #data_files = ['male_participants.txt','female_participants.txt'] # gender_files
-# group_start = "gender"
+#group_start = "gender"
 #data_files = ['m_spatial_group_0.txt','m_spatial_group_1.txt','m_spatial_group_2.txt','m_spatial_group_3.txt','m_spatial_group_4.txt','f_spatial_group_0.txt','f_spatial_group_1.txt','f_spatial_group_2.txt','f_spatial_group_3.txt','f_spatial_group_4.txt'] # gender_spatial_files
-# group_start = "gender_spatial"
+#group_start = "gender_spatial"
 
 output_folder = group_start+"/"
 spacing = 2#[2,2,2,2,2,1.1,2]
@@ -65,18 +65,20 @@ if __name__ == '__main__':
             #print map(lambda x: float(x), data[dist_tot_avg_row][1:])
 
             headers = data[0][1:]
-
+            print headers
             N = len(data[data_rows[j]][1:])
 
             #ind = map(lambda x: x+width*i,np.arange(0,N*(len(data_files)/2),(len(data_files)/2)))
             try:
                 ind = map(lambda x: x+width*i,np.arange(0,N*(len(data_files)/spacing),(len(data_files)/spacing)))
             except:
-                ind = np.arange(0,4)
+                ind = np.arange(0,6)
 
             try:
+                print data[data_rows[j+3]][:]
                 avgs = map(lambda x: float(x), data[data_rows[j]][1:])
                 stds = map(lambda x: float(x), data[data_rows[j+3]][1:])
+                print "AVGS: ", avgs
                 group = plt.bar(ind,avgs ,width, color = colours[i], yerr = stds,hatch=hatches[0])
 
             # except:
@@ -84,6 +86,7 @@ if __name__ == '__main__':
             #     break
                 groups.append(group)
             except Exception as e:
+                print "ERROR: ", e
                 #print e, "j: ",j+3, " len: " ,len(data)
                 pass
 

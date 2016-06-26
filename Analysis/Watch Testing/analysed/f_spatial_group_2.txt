@@ -57,3 +57,18 @@ stage3Time, nan, nan, nan,
 stage1Collisions, nan, nan, nan, 
 stage2Collisions, nan, nan, nan, 
 stage3Collisions, nan, nan, nan, 
+
+STATS watch_sa v xbox_sa, F-val, p-val, 
+dist_tot, nan, nan
+time_tot, nan, nan
+collisions, nan, nan
+timeInAuto, nan, nan
+timeInAuto_s1, nan, nan
+timeInAuto_s2, nan, nan
+timeInAuto_s3, nan, nan
+stage1Time, nan, nan
+stage2Time, nan, nan
+stage3Time, nan, nan
+stage1Collisions, nan, nan
+stage2Collisions, nan, nan
+stage3Collisions, nan, nan

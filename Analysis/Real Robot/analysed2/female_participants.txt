@@ -1,0 +1,29 @@
+AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 20.875, 20.447, 22.508, 20.127, 
+time_tot, 266.509, 303.429, 303.186, 286.586, 
+collisions, 0.0, 0.167, 1.167, 0.833, 
+timeInAuto, 0.043, 36.037, 0.208, 23.25, 
+
+STD_DEVS, watch_man, watch_sa, xbox_man, xbox_sa, 
+dist_tot, 0.982, 1.446, 1.561, 1.612, 
+time_tot, 94.184, 79.114, 103.551, 90.628, 
+collisions, 0.0, 0.373, 1.067, 1.067, 
+timeInAuto, 0.065, 9.528, 0.431, 15.186, 
+
+STATS watch_man v xbox_man, t-val, p-val, corr, 
+dist_tot, -1.98, 0.076, 0.696, 
+time_tot, -0.586, 0.571, 0.704, 
+collisions, -2.445, 0.035, nan, 
+timeInAuto, -0.846, 0.417, -0.24, 
+
+STATS watch_sa v xbox_sa, t-val, p-val, 
+dist_tot, 0.33, 0.748, 0.736, 
+time_tot, 0.313, 0.761, 0.705, 
+collisions, -1.319, 0.217, 0.07, 
+timeInAuto, 1.595, 0.142, 0.728, 
+
+STATS watch_sa v xbox_sa, F-val, p-val, 
+dist_tot, 0.109, 0.748
+time_tot, 0.098, 0.761
+collisions, 1.739, 0.217
+timeInAuto, 2.544, 0.142

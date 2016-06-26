@@ -1,14 +1,14 @@
-AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, 
-dist_tot, 17.127, 20.455, 21.148, 20.497, 
-time_tot, 227.455, 282.807, 216.095, 249.891, 
-collisions, 0.333, 0.333, 0.667, 0.333, 
-timeInAuto, 0.0, 37.35, 0.195, 19.373, 
+AVERAGES, watch_man, watch_sa, xbox_man, xbox_sa, phone, tablet, 
+dist_tot, 17.127, 20.455, 21.148, 20.497, 21.762, 20.347, 
+time_tot, 227.455, 282.807, 216.095, 249.891, 299.487, 273.105, 
+collisions, 0.333, 0.333, 0.667, 0.333, 1.0, 0.5, 
+timeInAuto, 0.0, 37.35, 0.195, 19.373, 39.102, 47.152, 
 
 STD_DEVS, watch_man, watch_sa, xbox_man, xbox_sa, 
-dist_tot, 7.732, 1.585, 0.921, 1.268, 
-time_tot, 72.251, 48.52, 24.654, 45.336, 
-collisions, 0.471, 0.471, 0.745, 0.471, 
-timeInAuto, 0.0, 9.943, 0.436, 7.86, 
+dist_tot, 7.732, 1.585, 0.921, 1.268, 1.81, 0.954, 
+time_tot, 72.251, 48.52, 24.654, 45.336, 79.782, 24.477, 
+collisions, 0.471, 0.471, 0.745, 0.471, 0.816, 0.5, 
+timeInAuto, 0.0, 9.943, 0.436, 7.86, 14.795, 19.188, 
 
 STATS watch_man v xbox_man, t-val, p-val, corr, 
 dist_tot, -1.155, 0.275, 0.137, 
@@ -21,3 +21,9 @@ dist_tot, -0.046, 0.964, 0.46,
 time_tot, 1.108, 0.294, 0.221, 
 collisions, 0.0, 1.0, 0.25, 
 timeInAuto, 3.171, 0.01, -0.385, 
+
+STATS watch_sa v xbox_sa, F-val, p-val, 
+dist_tot, 0.002, 0.964
+time_tot, 1.229, 0.294
+collisions, 0.0, 1.0
+timeInAuto, 10.058, 0.01

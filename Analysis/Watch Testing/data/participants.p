@@ -4658,7 +4658,7 @@ p972
 aS'526_watch_sa.txt'
 p973
 asg36
-I4
+I5
 sg37
 (lp974
 g40
@@ -5021,7 +5021,7 @@ p1045
 aS'527_watch_sa.txt'
 p1046
 asg36
-I4
+I5
 sg37
 (lp1047
 g10
@@ -5203,7 +5203,7 @@ p1082
 aS'509_watch_man.txt'
 p1083
 asg36
-I4
+I6
 sg37
 (lp1084
 g9

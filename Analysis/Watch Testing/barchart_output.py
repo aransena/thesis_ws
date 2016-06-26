@@ -28,9 +28,9 @@ colours = ['0.5','0.55','0.6','0.65','0.7','0.75','0.8','0.85']
 #colours = ['w','w','r','k','g','w','w','b','y','m']
 titles = ["Average Distance Travelled", "Average Time Taken","Average Collisions Incurred"]
 hatches = [".",'-','o']
-
-groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt','_group_4.txt']
-group_start = "tech" # "game" "age" "spatial"
+#groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt','_group_4.txt']
+groups_end = ['_group_0.txt','_group_1.txt','_group_2.txt','_group_3.txt']
+group_start = "age" # "game" "age" "spatial"
 data_files = map(lambda x: group_start+x, groups_end)
 #data_files = ['participants.txt'] # all_files
 # group_start = "all"|

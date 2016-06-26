@@ -57,3 +57,18 @@ stage3Time, -2.363, 0.077, 0.83,
 stage1Collisions, nan, nan, nan, 
 stage2Collisions, nan, nan, nan, 
 stage3Collisions, 1.0, 0.374, nan, 
+
+STATS watch_sa v xbox_sa, F-val, p-val, 
+dist_tot, 0.364, 0.579
+time_tot, 4.509, 0.101
+collisions, 1.0, 0.374
+timeInAuto, 3.146, 0.151
+timeInAuto_s1, 1.889, 0.241
+timeInAuto_s2, 143.288, 0.0
+timeInAuto_s3, 2.226, 0.21
+stage1Time, 0.863, 0.406
+stage2Time, 5.066, 0.088
+stage3Time, 5.583, 0.077
+stage1Collisions, nan, nan
+stage2Collisions, nan, nan
+stage3Collisions, 1.0, 0.374

@@ -34,7 +34,6 @@ if __name__ == '__main__':
     dir = os.path.expanduser("~")
 
     data_source = os.path.join(dir, 'thesis_ws/Data/robot_testing/results/')
-
     surveys_source = os.path.join(dir, 'thesis_ws/Data/robot_testing/Survey/')
 
     pre_test = surveys_source + "pretest.csv"

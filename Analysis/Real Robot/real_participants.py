@@ -187,12 +187,13 @@ class participant:
                     self.pre_age_range = 2
                 elif data[2] == "35-44":
                     self.pre_age_range = 3
-                elif data[2] == "45-54" or data[2] == "55-64" or data[2] == "65-74":
+                #elif data[2] == "45-54" or data[2] == "55-64" or data[2] == "65-74":
+                elif data[2] == "45-54":
                     self.pre_age_range = 4
-                # elif data[2] == "55-64":
-                #     self.pre_age_range = 5
-                # elif data[2] == "65-74":
-                #     self.pre_age_range = 6
+                elif data[2] == "55-64":
+                    self.pre_age_range = 5
+                elif data[2] == "65-74":
+                    self.pre_age_range = 6
                 else:
                     self.pre_age_range = 0
 
@@ -303,6 +304,12 @@ class participant:
 
     def get_xbox_man_data(self):
         return self.xbox_man_data
+
+    def get_phone_data(self):
+        return self.phone_data
+
+    def get_tablet_data(self):
+        return self.tablet_data
 
     def get_gender(self):
         return self.gender

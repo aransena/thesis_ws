@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import os
 
-from scipy.stats import ttest_ind
+from scipy.stats import ttest_ind, f_oneway
 
 tags=["dist_tot","time_tot","collisions","timeInAuto"]
 def get_pickles(root):
@@ -26,13 +26,17 @@ if __name__ == '__main__':
         watch_sas = []
         xbox_mans = []
         xbox_sas = []
+        phone=[]
+        tablet=[]
         for f in participants:
             print f.get_test_num()
             watch_mans.append(f.get_watch_man_data())  # , f.get_watch_sa_data(),f.get_xbox_man_data(), f.get_xbox_sa_data()
             watch_sas.append(f.get_watch_sa_data())
             xbox_mans.append(f.get_xbox_man_data())
             xbox_sas.append(f.get_xbox_sa_data())
-        data = [watch_mans,watch_sas,xbox_mans,xbox_sas]
+            phone.append(f.get_phone_data())
+            tablet.append(f.get_tablet_data())
+        data = [watch_mans,watch_sas,xbox_mans,xbox_sas,phone,tablet]
 
         pick_name = os.path.split(pick)[1]
         output_dir = os.path.join(os.path.expanduser("~"), 'thesis_ws/Analysis/Real Robot/analysed/')
@@ -53,7 +57,7 @@ if __name__ == '__main__':
             print transposed
 
 
-        header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa"]
+        header = ["AVERAGES","watch_man","watch_sa","xbox_man","xbox_sa", "phone", "tablet"]
         map(lambda x: f.write(x + ", "), header)
         f.write("\n")
 
@@ -96,6 +100,16 @@ if __name__ == '__main__':
             results = ttest_ind(transposed_sets[1][i],transposed_sets[3][i])
             corr = np.corrcoef(transposed_sets[1][i],transposed_sets[3][i])[0][1]
             output = tags[i] + ", " + str(round(results[0],3)) + ", " + str(round(results[1],3)) + ", " + str(round(corr,3)) + ", "
+            f.write(output)
+            f.write("\n")
+
+        f.write("\n")
+        header = ["STATS watch_sa v xbox_sa", "F-val", "p-val"]
+        map(lambda x: f.write(x + ", "), header)
+        f.write("\n")
+        for i in range(0,len(transposed_sets[0])):
+            results = f_oneway(transposed_sets[1][i],transposed_sets[3][i])
+            output = tags[i] + ", " + str(round(results[0],3)) + ", " + str(round(results[1],3))
             f.write(output)
             f.write("\n")
 
